@@ -9,7 +9,7 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
-    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
@@ -35,7 +35,7 @@
       }
     ],
     "consistent-return": "off",
-    "max-len": ["error", { "code": 150, "ignoreTemplateLiterals": true }],
+    "max-len": ["error", { "code": 100, "ignoreTemplateLiterals": true }],
     "radix": ["error", "as-needed"],
     "no-empty": ["error", { "allowEmptyCatch": true }],
     "no-underscore-dangle": "off",
@@ -55,11 +55,7 @@
         "format": null
       }
     ],
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      { "varsIgnorePattern": "^__", "argsIgnorePattern": "^__" }
-    ],
-    "import/prefer-default-export": "off",
+    "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "^__", "argsIgnorePattern": "^__" }],
     "prefer-destructuring": [
       2,
       {
@@ -73,6 +69,13 @@
     "react/require-default-props": "off",
     "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
     "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "operator-linebreak": "off"
   }
 }
