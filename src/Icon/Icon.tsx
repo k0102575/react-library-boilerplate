@@ -48,21 +48,8 @@ const iconStyle = (
   }
 `;
 
-const Icon = ({
-  name,
-  width,
-  height,
-  color,
-  className,
-  fixStroke = true,
-  strokeWidth = 1,
-  rotate = 0,
-  fillColor,
-}: IconBoxProps) => (
-  <div
-    css={iconStyle(fixStroke, strokeWidth, rotate, width, height, color, fillColor)}
-    className={className}
-  >
+const Icon = ({ name, width, height, color, className, fixStroke = true, strokeWidth = 1, rotate = 0, fillColor }: IconBoxProps) => (
+  <div css={iconStyle(fixStroke, strokeWidth, rotate, width, height, color, fillColor)} className={className}>
     {createElement(svg[name])}
   </div>
 );

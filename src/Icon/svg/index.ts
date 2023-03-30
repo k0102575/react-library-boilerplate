@@ -1,1 +1,1 @@
-export { ReactComponent as icChevron } from "./ic-chevron.svg";
+export { ReactComponent as icChevron } from './ic-chevron.svg';

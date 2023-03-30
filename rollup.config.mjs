@@ -29,11 +29,7 @@ export default {
     }),
     babel({
       babelHelpers: 'runtime',
-      presets: [
-        '@babel/env',
-        ['@babel/react', { runtime: 'automatic' }],
-        '@babel/typescript',
-      ],
+      presets: ['@babel/env', ['@babel/react', { runtime: 'automatic' }], '@babel/typescript'],
       plugins: ['@babel/plugin-transform-runtime'],
       extensions,
     }),

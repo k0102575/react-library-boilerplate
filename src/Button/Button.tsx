@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import { ReactNode } from 'react';
 import { css } from '@emotion/react';
+import { ReactNode } from 'react';
 
 /*
   Interface
@@ -25,7 +25,7 @@ const ButtonStyle = () => css`
 */
 const Button = ({ className, children = 'Button', onClick }: ButtonProps) => {
   return (
-    <button className={className} css={ButtonStyle} onClick={onClick}>
+    <button className={className} css={ButtonStyle} onClick={onClick} type="button">
       {children}
     </button>
   );
