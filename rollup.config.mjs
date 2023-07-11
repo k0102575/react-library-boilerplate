@@ -21,7 +21,9 @@ export default {
   external: [/@babel\/runtime/],
   plugins: [
     url(),
-    svgr(),
+    svgr({
+      dimensions: false,
+    }),
     peerDepsExternal(),
     resolve({ extensions }),
     commonjs({
