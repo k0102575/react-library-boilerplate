@@ -33,6 +33,6 @@ export default {
       plugins: ['@babel/plugin-transform-runtime'],
       extensions,
     }),
-    typescript(),
+    typescript({ exclude: ['**/*.stories.tsx', 'node_modules'] }),
   ],
 };
